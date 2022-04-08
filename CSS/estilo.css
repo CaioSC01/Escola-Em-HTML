@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+
+/* Classes auxiliares */
+
+section.Principal {
+    position: relative;
+    background-image: url('../IMG/Background1.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 15px 0;
+    min-height: 100%;
+    background-attachment: fixed;
+}
+
+.Centro {
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 0 2%;
+
+}
+
+.clear {
+    clear: both;
+}
+
+.Transparencia {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+section.Principal header {
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fff;
+    z-index: 2;
+}
+
+.Icones-Sociais {
+    float: right;
+}
+
+.Icones-Sociais a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.Logo {
+    margin-top: 20px;
+    float: left;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav.Desktop {
+    margin-top: 20px;
+    float: right;
+}
+
+nav.Desktop ul {
+    list-style-type: none;
+}
+
+nav.Desktop li {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 19px;
+    font-weight: lighter;
+}
+
+nav.Desktop a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav.Desktop a:hover {
+    color: #0f3e6ee7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav.Mobile i {
+    float: right;
+    position: relative;
+    top: 23px;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+}
+
+nav.Mobile ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 94px;
+    background: #fff;
+    list-style-type: none;
+}
+
+nav.Mobile li {
+    font-weight: lighter;
+    border-bottom: 1px solid gray;
+    text-align: center;
+    padding: 8px 0;
+}
+
+nav.Mobile a {
+    display: block;
+    text-decoration: none;
+    color: gray;
+    text-transform: uppercase;
+}
+
+.Conteudo-Cabecalho {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    margin: 50px 0;
+    margin-left: 300px;
+}
+
+.Conteudo-Cabecalho h2 {
+    color: #fff;
+    font-weight: normal;
+    font-size: 45px;
+}
+
+.Conteudo-Cabecalho h2>span {
+    color: #2f69a3;
+}
+
+.Conteudo-Cabecalho p {
+    color: #fff;
+    margin-top: 19px;
+    font-size: 17px;
+}
+
+.Conteudo-Cabecalho a {
+    display: block;
+    width: 180px;
+    height: 45px;
+    background: #05305ade;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 19px;
+    border-radius: 25px;
+    line-height: 45px;
+}
+
+.Chamada-Cursos {
+    width: 100%;
+    text-align: center;
+    padding: 27px 2%;
+    background: #273f57;
+}
+
+.Chamada-Cursos h2 {
+    display: inline-block;
+    border-bottom: 1px solid #2b5875;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 27px;
+}
+
+.Box-Cursos {
+    padding: 40px 0;
+}
+
+.Box-Cursos>.Centro {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Box-Cursos-Individual {
+    width: 33.3%;
+    padding: 0 40px;
+}
+
+.Box-Cursos-Conteudo {
+    border: 1px solid gray;
+    box-shadow: 10px 9px 5px -6px rgba(0, 0, 0, 0.7);
+    min-height: 300px;
+}
+
+.Box-Cursos-Individual h2 {
+    background: #991818be;
+    color: #fff;
+    text-align: center;
+    padding: 3px;
+    font-weight: lighter;
+}
+
+.Box-Cursos-Individual p {
+    margin-left: 20px;
+    color: gray;
+    font-size: 17px;
+    margin-top: 9px;
+}
+
+.Pontos-Cursos {
+    padding: 8px 0 15px 0;
+}
+
+.Preco {
+    margin-top: 10px;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.Preco h2 {
+    font-size: 25px;
+    color: rgb(2, 102, 11);
+    padding: 0 20px;
+    background-color: transparent;
+    display: inline-block;
+    border-bottom: 1px solid gray;
+}
+
+section.Sobre {
+    position: relative;
+    width: 100%;
+    padding: 40px 0;
+    min-height: 300px;
+    background-image: url('../IMG/banner\ 1.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+section.Sobre>.Centro {
+    position: relative;
+    max-width: 960px;
+    color: #fff;
+    z-index: 1;
+}
+
+section.Sobre h2 {
+    text-align: center;
+}
+
+section.Sobre p {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+section.Section-Info {
+    padding: 30px 0;
+}
+
+section.Section-Info h2 {
+    position: relative;
+    color: rgb(46, 43, 90);
+}
+
+.T50 {
+    float: left;
+    width: 50%;
+    padding: 0 20px;
+    margin: 30px 0;
+}
+
+section.Section-Info h2 > .Borda-Efeito {
+    width: 50px;
+    height: 2px;
+    background: rgb(124, 116, 116);
+    position: absolute;
+    transition: 0.2s;
+    bottom: 2px;
+}
+
+.section.Section-Info h2 > .Borda-Efeito-Vertical{
+   
+    width: 2px;
+    height: 200px;
+    background: #000;
+
+
+}
+
+section.Section-Info h2:hover>.Borda-Efeito {
+    width: 100px;
+}
+
+.Contato form {
+    margin-top: 15px;
+}
+
+.Contato input:not([type="submit"]) {
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    border: 1px solid #A3A1A8;
+    display: block;
+    padding-left: 8px;
+    margin-top: 10px;
+    outline-color: purple;
+    border-bottom-color: #FF8C64;
+}
+
+.Contato textarea {
+    font-size: 15px;
+    width: 100%;
+    height: 120px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    margin-top: 10px;
+    resize: vertical;
+}
+
+.Contato input[type=submit]{
+
+    font-size: 15px;
+    cursor: pointer;
+    background: #302861c0;
+    color: #fff;
+    width: 100px;
+    height: 36px;
+    border-radius: 30px;
+    margin-top: 15px;
+    border: 0;
+}
+
+
+
+.Time > .T50{
+
+    width: 50%;
+    margin: 15px 1%;
+
+}
+
+.equipe-individual{
+
+    padding: 10px 8px;
+    border: 1px solid #ccc;
+    min-height: 100px;
+    padding-bottom: 30px;
+    box-shadow: 10px 9px 5px -6px rgba(0, 0, 0, 0.7);
+    border-radius: 30px;
+
+}
+
+.topo-box-usuario{
+
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.box-avatar{
+
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #ccc;
+    vertical-align: middle;
+}
+
+.info-usuario{
+
+    display: inline-block;
+    padding: 8px;
+    vertical-align: middle;
+}
+
+footer{
+
+    width: 100%;
+    padding: 10px 2%;
+    text-align: center;
+    color: #fff;
+    background: black ;
+}
+
+/* INICIANDO RESPONSIVIDADE */
+
+@media screen and (max-width:768px)  {
+    
+    nav.Mobile i{display: block;}
+
+    nav.Desktop {display: none;}
+
+    .Box-Cursos-Individual { width: 100%; margin: 10px 0;}
+
+    .T50{width: 100%;}
+}
